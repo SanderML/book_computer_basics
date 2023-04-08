@@ -1,0 +1,37 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Computer Basics"
+  author: "Luca Sander"
+  # cover-image: 
+  # favicon: 
+  repo-url: https://github.com/sanderml/books_computer_basics
+  repo-branch: master
+  repo-actions: [issue]
+  date: "4/7/2023"
+  chapters:
+    - index.qmd
+    - part: Terminal
+      chapters:
+        - "./100_introduction.ipynb"
+    - "./900_references.qmd"
+
+bibliography: "./configs/references.bib"
+# csl" "./configs/"
+
+format:
+  html:
+    theme: 
+    - cosmo
+    - rdds.scss
+    code-link: true
+    callout-appearance: simple
+    
+  # pdf:
+  #   documentclass: scrreprt
+
+# execute:
+#   echo: false
+#   output: asis
