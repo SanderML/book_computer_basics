@@ -15,7 +15,8 @@ book:
     - index.qmd
     - part: Terminal
       chapters:
-        - "./100_introduction.ipynb"
+        - "./100_shell_and_scripting.ipynb"
+        - "./200_useful_commands.ipynb"
     - "./900_references.qmd"
 
 bibliography: "./configs/references.bib"
