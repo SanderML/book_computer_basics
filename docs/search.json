@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Computer Basics",
+    "section": "",
+    "text": "Preface\nTo build on top of this repo install the environment with\nconda create -f configs/environment.yml\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+  },
+  {
+    "objectID": "100_shell_and_scripting.html#special-variables",
+    "href": "100_shell_and_scripting.html#special-variables",
+    "title": "Shell and Scripting",
+    "section": "Special variables",
+    "text": "Special variables\n\n$1 to $9: arguments to the script\n$0 name of the script itself\n$# number of arguments\n$$ process ID of current shell\n$? returns 0 if the last command errored\ntest is used for checks and comparisons\nexists with 0 if true\n[ + ] does the same, e.g.:\n\n[ -d $f ]"
+  },
+  {
+    "objectID": "100_shell_and_scripting.html#globbing",
+    "href": "100_shell_and_scripting.html#globbing",
+    "title": "Shell and Scripting",
+    "section": "Globbing",
+    "text": "Globbing\n\n* any string of characters\n? any single character\n{a,b,c} any of these characters\nto stop whitespace issues use [[\n\nallows && and ||"
+  },
+  {
+    "objectID": "100_shell_and_scripting.html#composabilty",
+    "href": "100_shell_and_scripting.html#composabilty",
+    "title": "Shell and Scripting",
+    "section": "Composabilty",
+    "text": "Composabilty\n\na | b\n\nmeans run both a and b\nsend all output of a as input of b\nprint output of b\n\nSTDIN: when the program reads input\nSTDOUT: when the program prints something\nSTDERR: a 2nd output the program prints errors\nby default\n\nSTDIN is your keyboard\nSTDOUT and STDERR are your terminal\n\na | b makes STDOUT of a STDIN of b\na &gt; foo (STDOUT of a goes to the file foo)\na 2&gt; foo (STDERR of a goes to the file foo)\na &lt; foo (STDIN of a is read from the file foo)\nhint: tail -f will print a file as its being written\n\ntac returns output in reversed order\n\nprocess substitution\n\nb &lt; (a) will run a, generate a temp file and pass that that to b\ndiff &lt;(journaltctl -b -1 | head -n20) &lt;(journalctl -b -2 | head -n20)\n& suffix runs a program in the background\n^Z to but the current program into background BUT stops it\n\nbg to run the last job in the background\n\nsee als processes with jobs\nfg %JOB to bring the process back to the foreground\ndisown or nohup severs the process connection to the current session"
+  },
+  {
+    "objectID": "100_shell_and_scripting.html#sed",
+    "href": "100_shell_and_scripting.html#sed",
+    "title": "Shell and Scripting",
+    "section": "sed",
+    "text": "sed\n\nsed s/REGEX/SUBSTITUTION/\nsed 's/.*Disconnected from //'\n\nreplaces the the Regex consisting of everthing before and including “Disconnected from with nothing”"
+  },
+  {
+    "objectID": "200_useful_commands.html",
+    "href": "200_useful_commands.html",
+    "title": "Useful Commands",
+    "section": "",
+    "text": "ps aux lists all processes\nxargs command to run the command with previously piped commands\naunpack from the atool package to replace tar/unzip/unrar by doing it all at once\nsort sorts its input\nuniq -c will returns the count of each unique line\npaste -sd, returns the lines as comma separated values\nwc counts lines, words, etc.\ntee read from STDIN and write to STDOUT + each file"
+  }
+]
