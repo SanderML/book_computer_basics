@@ -40,5 +40,54 @@
     "title": "Useful Commands",
     "section": "",
     "text": "ps aux lists all processes\nxargs command to run the command with previously piped commands\naunpack from the atool package to replace tar/unzip/unrar by doing it all at once\nsort sorts its input\nuniq -c will returns the count of each unique line\npaste -sd, returns the lines as comma separated values\nwc counts lines, words, etc.\ntee read from STDIN and write to STDOUT + each file"
+  },
+  {
+    "objectID": "300_linux_applications.html",
+    "href": "300_linux_applications.html",
+    "title": "Printer",
+    "section": "",
+    "text": "endeavour printer\n\nyay brother driver\n\nmfc l2750dw\n\ncups device uri: ipp://192.168.188.60\n\n\n\nDell Thunderbolt\n\nadd file /etc/udev/rules.d/99-removable.rules with content: &gt; ACTION==“add”, SUBSYSTEM==“thunderbolt”, ATTR{authorized}==“0”, ATTR{authorized}=“1”\n\n\n\nPowermenu in Endeavour with Text input\n\nin ~/.config/rofi/powermenu.rasi &gt; uncomment last lines called mainbox {children…}\n\n\n\nBluetooth\n\nDual Pairing\n\nteufel headset\n\nmac adress: 6c0de1821047\nin hex: 79 3D 51 8A 36 AA EC 95 18 B8 3C 29 C8 55 E5 37\n\nmx keys mini\n\nist schwieriger weil bluetooth 5.1 oder so\n\n\nBluetooth Headset Microphone\n\nworks somehow after reinstalling packages from this link:\n\nhttps://discovery.endeavouros.com/audio/pipewire/2021/09/\n\nin pavucontrol set configuration to:\n\nhsp/hfp codec mSBC\n\nSound ist aber sehr blechern im gegensatz zu vorher ohne micro\n\n\n\n\nCreating Bootable Devices\n\nventoy (copy paste multiple isos into folder)\npopsicle\nraspberry pi imager\nwoeusb (for windows isos)\n\n\n\nDual Boot with Windows\n\nArch Wiki Windows Guide\n\nfast boot und hibernation aus\nUTC Time in Windows"
+  },
+  {
+    "objectID": "300_linux_applications.html#printer",
+    "href": "300_linux_applications.html#printer",
+    "title": "Linux Tricks",
+    "section": "Printer",
+    "text": "Printer\n\nendeavour printer\n\nyay brother driver\n\nmfc l2750dw\n\ncups device uri: ipp://192.168.188.60"
+  },
+  {
+    "objectID": "300_linux_applications.html#dell-thunderbolt",
+    "href": "300_linux_applications.html#dell-thunderbolt",
+    "title": "Linux Tricks",
+    "section": "Dell Thunderbolt",
+    "text": "Dell Thunderbolt\n\nadd file /etc/udev/rules.d/99-removable.rules with content: &gt; ACTION==“add”, SUBSYSTEM==“thunderbolt”, ATTR{authorized}==“0”, ATTR{authorized}=“1”"
+  },
+  {
+    "objectID": "300_linux_applications.html#powermenu-in-endeavour-with-text-input",
+    "href": "300_linux_applications.html#powermenu-in-endeavour-with-text-input",
+    "title": "Linux Tricks",
+    "section": "Powermenu in Endeavour with Text input",
+    "text": "Powermenu in Endeavour with Text input\n\nin ~/.config/rofi/powermenu.rasi &gt; uncomment last lines called mainbox {children…}"
+  },
+  {
+    "objectID": "300_linux_applications.html#bluetooth",
+    "href": "300_linux_applications.html#bluetooth",
+    "title": "Linux Tricks",
+    "section": "Bluetooth",
+    "text": "Bluetooth\n\nDual Pairing\n\nteufel headset\n\nmac adress: 6c0de1821047\nin hex: 79 3D 51 8A 36 AA EC 95 18 B8 3C 29 C8 55 E5 37\n\nmx keys mini\n\nist schwieriger weil bluetooth 5.1 oder so\n\n\nBluetooth Headset Microphone\n\nworks somehow after reinstalling packages from this link:\n\nhttps://discovery.endeavouros.com/audio/pipewire/2021/09/\n\nin pavucontrol set configuration to:\n\nhsp/hfp codec mSBC\n\nSound ist aber sehr blechern im gegensatz zu vorher ohne micro"
+  },
+  {
+    "objectID": "300_linux_applications.html#creating-bootable-devices",
+    "href": "300_linux_applications.html#creating-bootable-devices",
+    "title": "Linux Tricks",
+    "section": "Creating Bootable Devices",
+    "text": "Creating Bootable Devices\n\nventoy (copy paste multiple isos into folder)\npopsicle\nraspberry pi imager\nwoeusb (for windows isos)"
+  },
+  {
+    "objectID": "300_linux_applications.html#dual-boot-with-windows",
+    "href": "300_linux_applications.html#dual-boot-with-windows",
+    "title": "Linux Tricks",
+    "section": "Dual Boot with Windows",
+    "text": "Dual Boot with Windows\n\nArch Wiki Windows Guide\n\nfast boot und hibernation aus\nUTC Time in Windows"
   }
 ]

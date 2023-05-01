@@ -17,6 +17,7 @@ book:
       chapters:
         - "./100_shell_and_scripting.ipynb"
         - "./200_useful_commands.ipynb"
+        - "./300_linux_tricks.ipynb"
     - "./900_references.qmd"
 
 bibliography: "./configs/references.bib"
